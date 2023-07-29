@@ -26,7 +26,7 @@ const Home = () => {
   );
 
   return (
-    <div className="pt-4 m-auto w-[90%]">
+    <div className="pt-4 m-auto w-[92%]">
       <form className="flex flex-col mx-auto w-full gap-4 items-center max-w-[1440px] sm:flex-row sm:justify-between">
         <div className="relative">
           <FiSearch className="absolute top-3 left-4" />
