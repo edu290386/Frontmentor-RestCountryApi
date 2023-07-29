@@ -3,7 +3,7 @@ const Card = (props) => {
 
     return (
       <div className="">
-        <section className="bg-white w-[290px] h-[320px] rounded-md  shadow cursor-pointer">
+        <section className="bg-white w-[285px] h-[320px] rounded-md  shadow cursor-pointer">
           <img src={props.image} className="w-full h-[170px] object-cover rounded-t-md shadow-sm" alt="" />
           <article className="px-4">
             <h2 className="font-bold mt-6 my-4">{props.name}</h2>
