@@ -16,24 +16,24 @@ const backHome = () => {
 }
 
   return (
-    <div className="flex justify-center items-center">
-      <section className="bg-very-light-gray  pt-6 min-h-screen mx-auto">
-        <div className="relative">
-          <IoMdReturnLeft className="absolute top-3 left-11" />
-          <button onClick={backHome} className=" bg-white w-36 h-10 pl-7 shadow rounded-lg">
+    <div className="flex justify-center items-center mx-auto w-[88%]">
+      <section className="bg-very-light-gray min-h-screen mx-auto">
+        <div className="relative my-8">
+          <IoMdReturnLeft className="absolute top-3 left-9" />
+          <button onClick={backHome} className=" bg-white w-32 h-9 pl-7 shadow rounded-lg">
             Back
           </button>
         </div>
-        <article className="my-12 mx-auto flex flex-col  sm:flex-row sm:justify-between">
+        <article className=" mx-auto flex flex-col  sm:flex-row sm:justify-between">
           <img
-            className="w-full max-w-[330px] h-[240px]"
+            className="my-10 h-[240px] object-cover"
             src={detailCountry.flags.svg}
             alt=""
           />
           <div>
-            <h2 className="text-lg font-bold mt-6 my-4">
+            <h1 className="text-3xl font-bold">
               {detailCountry.name}
-            </h2>
+            </h1>
             <article className="text-sm">
               <MainCountry detailCountry={detailCountry} />
               <SecondaryCountry detailCountry={detailCountry} />
