@@ -22,7 +22,7 @@ const MainCountry = ({ detailCountry }) => {
         </div>
         <div className="my-2 flex gap-1">
           <p className="font-semibold">Capital:</p>
-          <span className="font-light">{detailCountry.capital}</span>
+          <span className="font-light">{detailCountry.capital ? `${detailCountry.capital}` : "-"}</span>
         </div>
       </section>
     </div>

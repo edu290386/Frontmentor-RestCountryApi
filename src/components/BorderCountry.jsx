@@ -17,7 +17,7 @@ const BorderCountry = ({ detailCountry }) => {
   return (
     <div>
       <h2 className="text-base font-medium">Border Countries:</h2>
-      <div className="flex flex-wrap gap-x-2 gap-y-2 my-4 mb-16">
+      <div className="flex flex-wrap gap-3 my-4 mb-16">
         {detailCountry.borders == undefined ? (
           <div>-</div>
         ) : (

@@ -20,7 +20,7 @@ const backHome = () => {
       <section className="bg-very-light-gray min-h-screen mx-auto">
         <div className="relative my-8">
           <IoMdReturnLeft className="absolute top-3 left-9" />
-          <button onClick={backHome} className=" bg-white w-32 h-9 pl-7 shadow rounded-lg">
+          <button onClick={backHome} className=" bg-white w-32 h-9 pl-7 shadow-md rounded-lg">
             Back
           </button>
         </div>
