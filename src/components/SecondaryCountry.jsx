@@ -1,7 +1,7 @@
 const SecondaryCountry = ({ detailCountry }) => {
   return (
     <div>
-      <section>
+      <section className="my-8">
         <div className="my-2 flex gap-1">
           <p className="font-semibold">Top Level Domain:</p>
           <span className="font-light ml-1 flex gap-x-1">

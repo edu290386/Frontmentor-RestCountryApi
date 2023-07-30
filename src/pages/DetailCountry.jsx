@@ -26,12 +26,12 @@ const backHome = () => {
         </div>
         <article className=" mx-auto flex flex-col  sm:flex-row sm:justify-between">
           <img
-            className="my-10 h-[240px] object-cover"
+            className="my-8 h-[240px] object-cover"
             src={detailCountry.flags.svg}
             alt=""
           />
           <div>
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-2xl font-bold">
               {detailCountry.name}
             </h1>
             <article className="text-sm">

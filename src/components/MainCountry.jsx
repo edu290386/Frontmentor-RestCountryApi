@@ -1,7 +1,7 @@
 const MainCountry = ({ detailCountry }) => {
   return (
     <div>
-      <section className="my-8">
+      <section className="my-4">
         <div className="my-2 flex gap-1 items-center">
           <p className="font-semibold">Native Name:</p>
           <span className="font-light">{detailCountry.nativeName}</span>
