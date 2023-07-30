@@ -1,21 +1,26 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { data } from "../helpers/data";
 import { IoMdReturnLeft } from "react-icons/io";
 import MainCountry from "../components/MainCountry";
 import SecondaryCountry from "../components/SecondaryCountry";
+import BorderCountry from "../components/BorderCountry";
 
 const DetailCountry = () => {
   const { nameCountry } = useParams();
 
   const detailCountry = data.find((country) => country.name == nameCountry);
-  console.log(detailCountry);
+  const navigate = useNavigate()
+
+const backHome = () => {
+    navigate("/")
+}
 
   return (
     <div className="flex justify-center items-center">
       <section className="bg-very-light-gray  pt-6 min-h-screen mx-auto">
         <div className="relative">
           <IoMdReturnLeft className="absolute top-3 left-11" />
-          <button className=" bg-white w-36 h-10 pl-7 shadow rounded-lg">
+          <button onClick={backHome} className=" bg-white w-36 h-10 pl-7 shadow rounded-lg">
             Back
           </button>
         </div>
@@ -33,18 +38,9 @@ const DetailCountry = () => {
               <MainCountry detailCountry={detailCountry} />
               <SecondaryCountry detailCountry={detailCountry} />
             </article>
-        <article>
-            <h2>Border Countries:</h2>
-            <div className="flex flex-wrap gap-x-2 gap-y-2 ">
-                {
-                    detailCountry.borders.length == 0 ? <div>No tiene</div> : detailCountry.borders.map((border, index) => (
-                        <div className=" font-light text-sm bg-white py-1 px-4 shadow rounded-sm" key={index}>{border}</div>
-                    ))
-                }
-            </div>
-        </article>
-              
-
+            <article>
+              <BorderCountry detailCountry={detailCountry} />
+            </article>
           </div>
         </article>
       </section>

@@ -5,7 +5,7 @@ const SecondaryCountry = ({ detailCountry }) => {
         <div className="my-2 flex gap-1">
           <p className="font-semibold">Top Level Domain:</p>
           <span className="font-light ml-1 flex gap-x-1">
-            {!detailCountry.topLevelDomain.length ? (
+            {detailCountry.topLevelDomain == undefined ? (
               <span>-</span>
             ) : (
               detailCountry.topLevelDomain.map((top, index) => (
@@ -22,7 +22,7 @@ const SecondaryCountry = ({ detailCountry }) => {
         <div className="my-2 flex gap-1">
           <p className="font-semibold">Currencies:</p>
           <span className="font-light ml-1 flex flex-wrap gap-x-1">
-            {!detailCountry.topLevelDomain.length ? (
+            {detailCountry.currencies == undefined ? (
               <span>-</span>
             ) : (
               detailCountry.currencies.map((curr, index) => (
