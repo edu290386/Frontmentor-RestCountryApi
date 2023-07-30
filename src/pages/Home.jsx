@@ -6,6 +6,9 @@ import { useState } from "react";
 const Home = () => {
   const [countries, setCountries] = useState(data);
   const [findCountry, setFindCountry] = useState({ input: "", select: "" });
+  
+  const monedas = countries.map((country) => country.languages )
+  console.log(monedas)
 
   const handleChange = (e) => {
     e.preventDefault();
