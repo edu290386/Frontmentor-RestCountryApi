@@ -2,8 +2,8 @@ import { BsMoonStars } from "react-icons/bs";
 
 const NavBar = () => {
   return (
-    <div className="bg-white flex justify-center drop-shadow">
-      <div className="flex items-center justify-between w-[88%]  h-20">
+    <div className="bg-white flex justify-center drop-shadow ">
+      <div className="flex items-center justify-between max-w-[1440px] w-[88%]  h-20">
         <h1 className="font-bold text-base md:text-xl text-very-dark-blue-text">
           Where in the world?
         </h1>

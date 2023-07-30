@@ -26,7 +26,7 @@ const Home = () => {
   );
 
   return (
-    <div className="pt-6 m-auto w-[88%]">
+    <div className="pt-6 m-auto w-[88%] sm:pt-4">
       <form className="flex flex-col mx-auto w-full gap-4 items-center max-w-[1440px] sm:flex-row sm:justify-between">
         <div className="relative">
           <FiSearch className="absolute top-3 left-4" />
@@ -65,7 +65,7 @@ const Home = () => {
           </option>
         </select>
       </form>
-      <article className="flex flex-wrap mx-auto gap-10 justify-center mt-4 max-w-[1440px]">
+      <article className="flex flex-wrap mx-auto gap-10 justify-center mt-4 max-w-[1440px] sm:gap-16">
         {filterRegion.map((country, index) => (
           <Card
             key={index}
