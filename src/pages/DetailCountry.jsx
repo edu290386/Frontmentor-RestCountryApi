@@ -12,7 +12,7 @@ const DetailCountry = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <section className="bg-very-light-gray  pt-6 h-screen mx-auto">
+      <section className="bg-very-light-gray  pt-6 min-h-screen mx-auto">
         <div className="relative">
           <IoMdReturnLeft className="absolute top-3 left-11" />
           <button className=" bg-white w-36 h-10 pl-7 shadow rounded-lg">
@@ -31,10 +31,20 @@ const DetailCountry = () => {
             </h2>
             <article className="text-sm">
               <MainCountry detailCountry={detailCountry} />
-            </article>
-            <article className="text-sm">
               <SecondaryCountry detailCountry={detailCountry} />
             </article>
+        <article>
+            <h2>Border Countries:</h2>
+            <div className="flex flex-wrap gap-x-2 gap-y-2 ">
+                {
+                    detailCountry.borders.length == 0 ? <div>No tiene</div> : detailCountry.borders.map((border, index) => (
+                        <div className=" font-light text-sm bg-white py-1 px-4 shadow rounded-sm" key={index}>{border}</div>
+                    ))
+                }
+            </div>
+        </article>
+              
+
           </div>
         </article>
       </section>
