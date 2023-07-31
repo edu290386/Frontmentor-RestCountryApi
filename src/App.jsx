@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <div className="bg-very-light-gray min-h-screen">
+    <div className="bg-very-light-gray dark:bg-very-dark-blue min-h-screen">
       <AppRoute  />
     </div>
   )

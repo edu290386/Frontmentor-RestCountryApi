@@ -26,7 +26,7 @@ const BorderCountry = ({ detailCountry }) => {
           detailCountry.borders.map((border, index) => (
             <div
               onClick={() => changeCountry(border)}
-              className="cursor-pointer font-light text-xs sm:text-base bg-white py-2 px-4 sm:py-1 rounded sm:rounded-md shadow-md"
+              className="cursor-pointer font-light text-xs sm:text-base bg-white py-2 px-4 sm:py-1 rounded sm:rounded-md shadow-md dark:bg-dark-blue"
               key={index}
             >
               {getName(border)}

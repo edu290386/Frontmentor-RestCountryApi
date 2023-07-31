@@ -16,13 +16,13 @@ const DetailCountry = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center font-nunito-sans">
-      <section className="bg-very-light-gray w-[88%] max-w-[1440px]   ">
+    <div className="flex flex-col justify-center items-center font-nunito-sans dark:text-white">
+      <section className="bg-very-light-gray w-[88%] max-w-[1440px] dark:bg-very-dark-blue  ">
         <div className="relative mt-8 ">
           <IoMdReturnLeft className="absolute top-3 left-9" />
           <button
             onClick={backHome}
-            className=" bg-white w-32 h-9 pl-7 shadow-lg rounded-lg"
+            className=" bg-white w-32 h-9 pl-7 shadow-lg rounded-lg dark:bg-dark-blue "
           >
             Back
           </button>
@@ -31,7 +31,7 @@ const DetailCountry = () => {
       <section className="w-[88%] max-w-[1440px] sm:flex  sm:flex-col lg:flex-row lg:justify-between lg:mt-10">
         <article className="my-14 lg:my-0 lg:w-[45%]  ">
           <img
-            className="shadow-slate-300 rounded shadow-md object-cover
+            className="rounded shadow-md object-cover
              w-full  max-h-[280px] sm:max-w-md sm:mx-auto lg:max-w-2xl lg:max-h-[360px] "
             src={detailCountry.flags.svg}
             alt=""

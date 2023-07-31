@@ -27,14 +27,14 @@ const Home = () => {
 
   return (
     <div className="pt-6 m-auto w-[88%] sm:pt-4">
-      <form className="flex flex-col mx-auto w-full gap-4 max-w-[1440px] sm:flex-row sm:justify-between sm:items-center">
+      <form className="flex flex-col mx-auto w-full gap-4 max-w-[1440px] sm:flex-row sm:justify-between sm:items-center dark:text-white">
         <div className="relative">
-          <FiSearch className="absolute top-3 left-4" />
+          <FiSearch className="absolute top-4 left-4" />
           <input
             onChange={handleChange}
             name="input"
             value={findCountry.input}
-            className="text-sm border bg-white w-full max-w-sm h-12 pl-11 shadow rounded-lg sm:max-w-none sm:w-96"
+            className="text-sm border bg-white w-full max-w-sm h-12 pl-11 shadow rounded-lg sm:max-w-none sm:w-96 dark:bg-dark-blue dark:border-none"
             type="text"
             placeholder="Search for a country..."
           />
@@ -43,7 +43,7 @@ const Home = () => {
           onChange={handleChange}
           name="select"
           value={findCountry.select}
-          className="text-sm bg-white w-56 h-12 px-4 shadow rounded-lg my-6"
+          className="text-sm bg-white w-56 h-12 px-4 shadow rounded-lg my-6 dark:bg-dark-blue dark:border-none dark:text-white"
         >
           <option className="" value="">
             Filter by Region
