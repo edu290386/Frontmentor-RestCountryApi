@@ -3,7 +3,7 @@ import { BsMoonStars } from "react-icons/bs";
 const NavBar = () => {
 
   const toggleDarkMode = () => {
-    document.documentElement.classList.add('dark')
+      document.documentElement.classList.toggle('dark')
   }
 
   return (
