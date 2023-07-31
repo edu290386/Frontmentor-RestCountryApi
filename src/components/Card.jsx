@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <Link to={`country/${props.name}`}>
-      <section className="bg-white w-[285px] h-[350px] rounded-md  shadow cursor-pointer">
+      <section className="bg-white w-[285px] h-[350px] rounded-md  shadow-md cursor-pointer">
         <img
           src={props.image}
           className="w-full h-[170px] object-cover rounded-t-md shadow-sm"

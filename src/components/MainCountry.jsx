@@ -1,7 +1,7 @@
 const MainCountry = ({ detailCountry }) => {
   return (
     <div>
-      <section className="my-4">
+      <section className="">
         <div className="my-2 flex gap-1 items-center">
           <p className="font-semibold">Native Name:</p>
           <span className="font-light">{detailCountry.nativeName}</span>
@@ -20,9 +20,11 @@ const MainCountry = ({ detailCountry }) => {
           <p className="font-semibold">Sub Region:</p>
           <span className="font-light">{detailCountry.subregion}</span>
         </div>
-        <div className="my-2 flex gap-1">
+        <div className="mt-2 flex gap-1">
           <p className="font-semibold">Capital:</p>
-          <span className="font-light">{detailCountry.capital ? `${detailCountry.capital}` : "-"}</span>
+          <span className="font-light">
+            {detailCountry.capital ? `${detailCountry.capital}` : "-"}
+          </span>
         </div>
       </section>
     </div>

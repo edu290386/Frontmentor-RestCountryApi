@@ -16,15 +16,17 @@ const BorderCountry = ({ detailCountry }) => {
 
   return (
     <div>
-      <h2 className="text-base font-medium">Border Countries:</h2>
-      <div className="flex flex-wrap gap-3 my-4 mb-16">
+      <h2 className="text-base lg:text-lg font-semibold my-5">
+        Border Countries:
+      </h2>
+      <div className="flex flex-wrap gap-3 mb-10">
         {detailCountry.borders == undefined ? (
           <div>-</div>
         ) : (
           detailCountry.borders.map((border, index) => (
             <div
               onClick={() => changeCountry(border)}
-              className="cursor-pointer font-light text-xs bg-white py-2 px-4 rounded shadow-md"
+              className="cursor-pointer font-light text-xs sm:text-base bg-white py-2 px-4 sm:py-1 rounded sm:rounded-md shadow-md"
               key={index}
             >
               {getName(border)}

@@ -6,7 +6,7 @@ import { useState } from "react";
 const Home = () => {
   const [countries, setCountries] = useState(data);
   const [findCountry, setFindCountry] = useState({ input: "", select: "" });
-  
+
   const handleChange = (e) => {
     e.preventDefault();
     let { name, value } = e.target;
@@ -34,7 +34,7 @@ const Home = () => {
             onChange={handleChange}
             name="input"
             value={findCountry.input}
-            className="border bg-white w-full max-w-sm h-12 pl-11 shadow rounded-lg sm:max-w-none sm:w-96"
+            className="text-sm border bg-white w-full max-w-sm h-12 pl-11 shadow rounded-lg sm:max-w-none sm:w-96"
             type="text"
             placeholder="Search for a country..."
           />
@@ -82,4 +82,3 @@ const Home = () => {
 };
 
 export default Home;
-
