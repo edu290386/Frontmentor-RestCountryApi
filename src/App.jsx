@@ -1,5 +1,4 @@
 import AppRoute from "./route/AppRoute"
-import Home from "./pages/Home"
 import './App.css';
 
 function App() {
